@@ -339,4 +339,5 @@
   }
 
   nativeLog(`%c${TAG} armed at document-start`, 'color:lime');
+  window.postMessage({ source: 'extension-health-check', type: 'armed' }, '*');
 })();

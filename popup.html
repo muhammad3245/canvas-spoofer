@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Extension status</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="card" id="card" data-state="checking">
+    <div class="icon" aria-hidden="true">
+      <svg class="check" viewBox="0 0 48 48"><circle cx="24" cy="24" r="21"/><path d="m14 24 7 7 14-15"/></svg>
+      <svg class="cross" viewBox="0 0 48 48"><circle cx="24" cy="24" r="21"/><path d="m17 17 14 14m0-14L17 31"/></svg>
+      <span class="spinner"></span>
+    </div>
+    <p class="eyebrow" id="eyebrow">EXTENSION STATUS</p>
+    <h1 id="title">Checking…</h1>
+    <p class="detail" id="detail">Checking this page</p>
+    <button id="fix" type="button" hidden>Fix it <span aria-hidden="true">↗</span></button>
+    <p class="footnote">Status updates when a page loads.</p>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
